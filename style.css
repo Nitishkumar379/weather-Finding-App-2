@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik Gemstones",Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.container{ 
+    width:100%;  
+    height:100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("./cool-background\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0.8;
+}
+.weather{
+        z-index: 2;
+        color: white; 
+        display: flex;
+        align-items: center;
+}
+.weather >div{
+    margin: 10px;
+}
+.weather1{
+     font-size: 4rem;
+}
+.weather p {
+     font-size: 2rem;
+}
+.weather span {
+    font-size: 0.75rem;
+}
+.weather3 span {
+    margin: 0.3rem; 
+}
+.weather3 img{
+    width: 1.8rem;
+}
+nav{
+    height:100px;
+    padding: 1rem 0;
+    border-radius: 100px 100px 0 0 ;
+    box-shadow: 0 0 25px rgba(0,0,0,0.18);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(244, 225, 140, 0.347);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav form{
+     width:70%;
+     /* background-color: rgb(244, 225, 140,0.3)  ; */
+     display: grid; 
+     grid-template-columns: 5fr 1fr;
+}
+.searchField{
+    font-size: 1rem;
+    outline: none;
+    color:white;
+    background-color: transparent;
+    padding: 1rem 0;
+    border: none;
+    width: 95%;;
+    border-bottom: 2px solid white;
+}
+nav form button{
+    background-color: cadetblue;
+    border-radius: 250px 0px 250px 0px;
+    font-size: 1.1rem;
+    color:white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    transform:scaleY(1.2);
+}
